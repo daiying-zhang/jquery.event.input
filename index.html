@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+</head>
+<body>
+    <input value="you can change this value!" id="input" style="width: 600px;"/>
+    <div id="log"><pre>you can change this value!</pre></div>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="src/jquery.event.input.js"></script>
+    <script>
+        $('#input').bind('input', function(eve){
+            $('#log').html('<pre>' + $(this).val() + '</pre>');
+        })
+    </script>
+</body>
+</html>
